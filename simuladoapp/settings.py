@@ -19,6 +19,21 @@ SECRET_KEY = config('SECRET_KEY', default='sua-chave-secreta-altere-em-producao'
 
 DEBUG = config('DEBUG', default=False, cast=bool)
 
+<<<<<<< HEAD
+<<<<<<< Updated upstream
+# Alterar para incluir explicitamente o domínio PythonAnywhere
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'simuladoapp.com.br', 'www.simuladoapp.com.br']
+=======
+ALLOWED_HOSTS = [
+    'localhost', 
+    '127.0.0.1',
+    '10.0.2.2',  # Para Android Emulator
+    '192.168.1.10',  # ⬅️ SEU IP
+    'simuladoapp.com.br', 
+    'www.simuladoapp.com.br',
+    '.pythonanywhere.com',
+    'lauric-nonparticipating-rhys.ngrok-free.dev',
+=======
 ALLOWED_HOSTS = [
     'localhost', 
     '127.0.0.1', 
@@ -26,11 +41,16 @@ ALLOWED_HOSTS = [
     'www.simuladoapp.com.br',
     '.pythonanywhere.com',  # Para desenvolvimento no PythonAnywhere
     'lauric-nonparticipating-rhys.ngrok-free.dev', # Para webhooks do Stripe via ngrok
+>>>>>>> pagamentos_paginas
 ]
 
 # ========================================
 # SEGURANÇA
 # ========================================
+<<<<<<< HEAD
+>>>>>>> Stashed changes
+=======
+>>>>>>> pagamentos_paginas
 
 if not DEBUG:
     CSRF_COOKIE_SECURE = True
@@ -61,10 +81,19 @@ INSTALLED_APPS = [
     'questions',
     'classes',
     'api',
+<<<<<<< Updated upstream
     'creditos',
+<<<<<<< HEAD
+=======
     'payments',  # Sistema de pagamentos
     
     # Apps de terceiros
+>>>>>>> Stashed changes
+=======
+    'payments',  # Sistema de pagamentos
+    
+    # Apps de terceiros
+>>>>>>> pagamentos_paginas
     'ckeditor',
     'ckeditor_uploader',
     'rest_framework',
