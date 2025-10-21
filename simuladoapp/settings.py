@@ -63,17 +63,10 @@ INSTALLED_APPS = [
     'questions',
     'classes',
     'api',
-
     'creditos',
-
     'payments',  # Sistema de pagamentos
     
     # Apps de terceiros
-
-    'payments',  # Sistema de pagamentos
-    
-    # Apps de terceiros
-
     'ckeditor',
     'ckeditor_uploader',
     'rest_framework',
